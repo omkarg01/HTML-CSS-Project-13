@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secondary: #5ba0e0;
+    --primary: #7030CC;
+    --white: #FFFFFF;
+    --black: #000000;
+    --orange: #F2904A;
+    --green: #7ACA3A;
+    --blue: #6BB2F4;
+}
+
+HTML {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.header {
+    background-color: var(--primary);
+    padding-inline: 10vw;
+    margin-inline: auto;
+    position: relative;
+    height: 120vh;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    align-items: center;
+}
+
+.logo img {
+    width: 10rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    color: var(--white);
+    font-weight: 400;
+    align-items: center;
+    /* background-color: #fff; */
+    padding-right: 10rem;
+    font-size: 1.7rem;
+}
+
+.list-item.active {
+    content: "";
+    /* height: 1px; */
+    color: var(--secondary);
+    /* text-decoration: underline;
+    text-decoration-color: rgb(174, 19, 174); */
+    border-bottom: 2px solid rgb(232, 43, 232);
+    padding-bottom: 2px;
+
+}
+
+.list-item.btn {
+    background-color: var(--secondary);
+    border: none;
+    color: var(--white);
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    border-radius: 2px;
+    font-weight: 400;
+}
+
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+.hero {
+    /* display: flex; */
+    margin-top: 50px;
+    /* gap: 40px; */
+}
+
+.hero .left {
+    width: 30vw;
+    display: inline-block;
+}
+
+.hero .left h1 {
+    color: var(--white);
+    font-size: 6rem;
+    line-height: 8rem;
+    margin-bottom: 5rem;
+}
+
+.hero .left p {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hero .right {
+    display: inline-block;
+}
+
+.hero .right img {
+    height: 90vh;
+    position: absolute;
+    left: 45vw;
+    top: 10rem;
+}
+
+
+/* ------------------------------ */
+/* ---------- APPLICATION ------------ */
+/* ------------------------------ */
+
+.application {
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    justify-content: start;
+}
+
+.application .left img {
+    width: 50vw;
+}
+
+.application .right {
+    margin-left: 15rem;
+}
+
+.application .right h1 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+}
+
+.application-list {
+    display: flex;
+    list-style-type: none;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+.list-item h4 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.list-item p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.arrow {
+    font-size: 3rem;
+}
+
+.arrow.orange{
+    color: var(--orange);
+}
+
+.arrow.green{
+    color: var(--green);
+}
+.arrow.blue{
+    color: var(--blue);
+}
+
+
+/* ------------------------------ */
+/* ---------- Feature ------------ */
+/* ------------------------------ */
+.feature {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+    /* padding: 3rem; */
+}
+
+.feature-cards {
+    display: flex;
+    gap: 5rem;
+    height: fit-content;
+    justify-content: space-between;
+    /* background-color: #5ba0e0; */
+    width: 70vw;
+    margin-inline: auto;
+    margin-top: 5rem;
+    padding: 3rem 0;
+    
+}
+
+
+.feature-cards .card {
+    max-width: 40rem;
+    height: 15vh;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .1);
+    border-radius: 3rem;
+    height: 30rem;
+    background-color: #FFFFFF;
+}
+
+.card > .logo {
+    height: 13rem;
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 3rem;
+    border-radius: 500px;
+}
+
+.clean-code-logo{
+    /* background-color: #C78B8B; */
+    background-color: rgba(199, 139, 139, 0.2);
+}
+
+.clean-code-logo img{
+    filter: invert(73%) sepia(3%) saturate(4336%) hue-rotate(314deg) brightness(87%) contrast(75%);
+}
+.data-analytics-logo{
+    background-color:rgba(242, 138, 63, 0.2) ; 
+}
+.data-analytics-logo img{
+    filter: invert(85%) sepia(54%) saturate(332%) hue-rotate(34deg) brightness(101%) contrast(50%);
+}
+.fully-secured-logo{
+    background-color: rgba(146, 177, 177,0.2);
+}
+.fully-secured-logo img{
+    filter: invert(69%) sepia(11%) saturate(459%) hue-rotate(131deg) brightness(97%) contrast(93%);
+}
+.logo-24x7{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo-24x7{
+    filter: invert(33%) sepia(19%) saturate(3118%) hue-rotate(256deg) brightness(99%) contrast(92%);
+}
+
+.card > .logo img{
+    height: 7rem;
+}
+
+.desc{
+    margin-top: 3rem;
+    height: 42%;
+    border-radius: 3rem;
+}
+.desc.active{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.desc h1 {
+    font-size: 2.5rem;
+}
+
+.desc p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .feature .feature-cards .logo.analytics {
+    background-color: rgba(255, 193, 58, 0.2);
+}
+
+.feature .feature-cards .logo.profile {
+    background-color: rgba(101, 255, 58, 0.2);
+}
+
+.feature .feature-cards .logo.profile img {
+    width: 60px;
+}
+
+.feature .feature-cards .logo.support {
+    background-color: rgba(235, 58, 255, 0.2);
+}
+
+.feature .feature-cards .logo.support img {
+    width: 50px;
+}
+
+.feature .feature-cards .logo.code img {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+
+} */
+
+
+
+/* .feature .feature-cards .card:first-child .info {
+    background-color: var(--primary);
+    color: var(--white);
+} */
+
+/* .feature .feature-cards .card .info {
+    border-radius: 10px;
+    height: 100%;
+    padding: 4px 10px;
+}
+
+.feature .feature-cards .card .info h4 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.feature .feature-cards .card .info p {
+    font-size: 13px;
+    margin-top: 4px;
+} */
