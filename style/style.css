@@ -94,7 +94,7 @@ body {
 .hero {
     display: flex;
     /* gap: 40px; */
-    
+
 }
 
 .hero .left {
@@ -196,7 +196,7 @@ body {
     margin-bottom: 10rem;
     margin-top: 2rem;
     /* padding: 3rem; */
-    
+
 }
 
 .feature-cards {
@@ -290,18 +290,18 @@ body {
     font-size: 1.5rem;
 }
 
-@media (width <= 425px) {
+@media (width <=425px) {
     .fa-solid.fa-bars {
         display: block;
-        color:var(--white);
+        color: var(--white);
     }
 
-    .header{
+    .header {
         padding-bottom: 5rem;
         padding-inline: 5vw;
     }
 
-    .navbar{
+    .navbar {
         padding: 0;
         padding-top: 2rem;
 
@@ -314,7 +314,7 @@ body {
 
 
 
-    .hero{
+    .hero {
         flex-direction: column-reverse;
     }
 
@@ -345,14 +345,40 @@ body {
 
 
 
-    .application{
+    .application {
         flex-direction: column;
         padding: 0;
         width: 90vw;
+        margin-inline: auto;
+    }
+
+    .application .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .application .left img {
+        width: 80%;
+    }
+
+    .application .right {
+        margin-left: 0;
+    }
+
+    .application .right h1 {
+        text-align: center;
+        font-size: 2.7rem;
+        width: 90%;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+    }
+
+    .application .list {
+        
     }
 
 
-    .feature-cards{
+    .feature-cards {
         flex-direction: column;
     }
 
