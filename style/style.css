@@ -373,8 +373,20 @@ body {
         margin-bottom: 2rem;
     }
 
-    .application .list {
-        
+    .application-list {
+        width: 90%;
+        margin-inline: auto;
+        gap: 1rem;
+    }
+
+    .application-list h4{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .application-list p {
+        width: 80%;
+        font-size: 1.3rem;
+        margin-inline: auto;
     }
 
 
