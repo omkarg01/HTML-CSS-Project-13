@@ -40,7 +40,8 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    height: 20vh;
+    /* height: 20vh; */
+    padding-block: 3rem;
     align-items: center;
 }
 
@@ -124,10 +125,6 @@ body {
 
 .hero .right img {
     width: 100%;
-    /* height: 90vh; */
-    /* position: absolute; */
-    /* left: 45vw; */
-    /* top: 10rem; */
 }
 
 
@@ -299,9 +296,21 @@ body {
         color:var(--white);
     }
 
+    .header{
+        padding-bottom: 5rem;
+        padding-inline: 5vw;
+    }
+
+    .navbar{
+        padding: 0;
+        padding-top: 2rem;
+
+    }
+
     .nav-list {
         display: none;
     }
+
 
 
 
@@ -309,9 +318,37 @@ body {
         flex-direction: column-reverse;
     }
 
+    .hero .left {
+        width: 100%;
+    }
+
+    .hero .left h1 {
+        text-align: center;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-block: 1.5rem;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .hero .left p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 85%;
+        margin-inline: auto;
+    }
+
+    .hero .right {
+        width: 100%;
+    }
+
+
 
     .application{
         flex-direction: column;
+        padding: 0;
+        width: 90vw;
     }
 
 
