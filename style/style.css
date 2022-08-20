@@ -204,7 +204,6 @@ body {
     gap: 5rem;
     height: fit-content;
     justify-content: space-between;
-    /* background-color: #5ba0e0; */
     width: 70vw;
     margin-inline: auto;
     margin-top: 5rem;
@@ -215,10 +214,8 @@ body {
 
 .feature-cards .card {
     max-width: 40rem;
-    height: 15vh;
     box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .1);
     border-radius: 3rem;
-    height: 30rem;
     background-color: #FFFFFF;
 }
 
@@ -272,7 +269,7 @@ body {
 
 .desc {
     margin-top: 3rem;
-    height: 42%;
+    /* height: 42%; */
     border-radius: 3rem;
 }
 
@@ -286,7 +283,7 @@ body {
 }
 
 .desc p {
-    margin-top: 1rem;
+    padding-block: 1rem;
     font-size: 1.5rem;
 }
 
@@ -379,10 +376,11 @@ body {
         gap: 1rem;
     }
 
-    .application-list h4{
+    .application-list h4 {
         font-size: 1.8rem;
         margin-bottom: 1rem;
     }
+
     .application-list p {
         width: 80%;
         font-size: 1.3rem;
@@ -390,9 +388,66 @@ body {
     }
 
 
-    .feature-cards {
-        flex-direction: column;
+
+    .feature {
+        text-align: center;
+        font-size: 2rem;
+        width: 90%;
+        margin-inline: auto;
+        margin-bottom: 2rem;
     }
+
+    .feature-cards {
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        margin-inline: auto;
+        /* flex-wrap: wrap; */
+        gap: 2rem;
+        margin-inline: 0;
+        width: 100%;
+    }
+
+    .feature-cards .card {
+        border-radius: 2rem;
+        width: 100%;
+    }
+
+    .feature-cards .card .desc.active {
+        /* background-color: var(--primary);
+        color: var(--white); */
+        border: 2px solid darkblue;
+        height: fit-content;
+        border-radius: 2rem;
+    }
+
+    .feature-cards .card .logo {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .feature-cards .card .logo img {
+        height: 4rem;
+    }
+
+    .feature-cards .card .desc {
+        padding-block: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .feature-cards .card .desc h1 {
+        /* height: 42%; */
+        font-size: 1.7rem;
+    }
+
+    .feature-cards .card .desc p {
+        /* height: 42%; */
+        font-size: 1.2rem;
+        width: 95%;
+        margin-inline: auto;
+    }
+
 
 
 }
