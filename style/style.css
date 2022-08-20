@@ -315,4 +315,9 @@ body {
     }
 
 
+    .feature-cards{
+        flex-direction: column;
+    }
+
+
 }
